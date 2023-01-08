@@ -1,38 +1,183 @@
-.App {
+
+*{
+  font-family: Lato;
+}
+
+
+
+
+.navs {
+  color: white;
+  font-weight: 800;
+  padding: .5rem;
+  border-radius: .75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+
+.navs a {
+  background-color: rgb(21, 95, 125);
+  text-transform: uppercase;
+
+  max-width: 100px;
+  text-align: center;
+  margin-left: 1rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  flex: 1 1 auto;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navs a.selected{
+  background-color: rgb(226, 54, 54);
+ 
+}
+
+.navs .navFriend{
+  max-width: 500px;
+  font-weight: 800;
+  background-color: pink;
+  color: white;
+  font-size: x-large;
+}
+
+
+.navLink{
+  text-transform: uppercase;
+}
+
+
+
+.liked-list {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.liked-list li {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: .875rem;
+  padding: 1rem;
+  padding-left: 1.25rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  display: flex;
+  gap: 1rem;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .75rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.liked-list li button {
+  font-size: .75rem;
+  border: 0;
+  color: #fff;
+  background-color: rgb(39, 154, 131);
+  padding: .375rem .5rem ;
+  border-radius: .25rem;
+  margin-right: 1rem;
+}
+
+.liked-list li button:hover {
+  opacity: 0.9;
+}
+
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-weight: 800;
+}
+
+.formElement h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800; 
+}
+
+.formElement input {
+  width: 15rem;
+  margin-top: 0.2rem;
+  background-color: black;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.formContainer button {
+  width:17.2rem;
+  background-color: black;
+  color: #fff;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+
+/* Home */
+
+.homeContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* FriendList */
+
+.friendListContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  font-weight: 900;
+  font-size:2.5rem;
+  padding-bottom: 1rem;
+}
+
+.friendList {
+  text-transform: uppercase;
+  font-weight: 900;
+  list-style: none;
+ 
+}
+
+
+.friendList li {
+  margin-bottom: 1rem;
+}
+
+
+.header.header{
+  color:black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user{
+  color:rgb(21, 95, 125);
+ font-weight: bolder;
+}
+.user2{
+  color:rgb(21, 95, 125);
+ font-weight: bolder;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list{
+  color:rgb(21, 95, 125);
+ font-weight: bolder;
 }
